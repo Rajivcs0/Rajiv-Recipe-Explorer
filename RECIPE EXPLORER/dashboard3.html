@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot Halwa</title>
+    <link rel="stylesheet" href="styless1.css">
+    <link rel="icon" type="image/x-icon" href="burger.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="cursors"></div>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">🍔 Food Recipe</div>
+        <div class="blink-text">Gajar ka Halwa – the sweetest reminder that simple ingredients can create extraordinary joy
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search recipe" />
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="2.carrot halwa.jpg" alt="Carrot Halwa">
+        <div class="recipe-info">
+            <h1>Carrot Halwa</h1>
+            <div class="recipe-meta">
+                <span>⏱ Duration: 1h 12m</span>
+                <span>👨‍🍳 Chef: Bharath</span>
+                <span>🥘 Non-Veg</span>
+                <span>⭐ 4.7</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Details -->
+    <section class="recipe-details">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            
+            <div class="p1">
+                <ul>
+                <li>Carrot</li>
+                <li>sugar</li>
+                <li>Milk </li>
+                <li>ghee </li>
+                <li>cardamom Powder</li>
+                <li>Cashews</li>
+                <li>Almonds</li>
+                <li>Pistchios</li>
+                <li>Mawa</li>
+                <li>Condensed Milk</li>
+                <li>Water</li>
+                <li>Nutmeg powder</li>
+                <li>Vannila essence</li>
+                <li>Raisins </li>
+                <li>Saffron Strands</li>
+            </ul>
+            </div>
+            <div class="p1">
+                <ul>
+                    <li> -1 KG</li>
+                    <li> - 1 KG</li>
+                    <li> -3</li>
+                    <li> - 200ml</li>
+                    <li>- 2 tsp</li>
+                    <li>- 1 tbsp</li>
+                    <li>- 1 tbsp</li>
+                    <li>- 1/2 tsp</li>
+                    <li>-  1</li>
+                    <li> - 3</li>
+                    <li>- 2</li>
+                    <li> - 4</li>
+                    <li>- 6 pods</li>
+                    <li>- 1 bunch</li>
+                    <li> - To taste</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="directions">
+            <form id="dashboard3" action="connection.php" method="post"> 
+            <h2>Directions</h2>
+            <div class="steps">
+                <div class="step">
+                    <input type="checkbox" id="step1">
+                    <label for="step1">Step 1<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>
+                        Heat ghee in a pan, add grated carrots, and sauté for 2-3 minutes. Add milk and bring to a boil, then simmer on low heat, stirring occasionally, until the milk evaporates and the carrots soften (about 15-20 minutes).
+                    </p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step2">
+                    <label for="step2">Step 2<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p> Add sugar and cardamom, stir well, and cook until the halwa thickens to your desired consistency.</p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step3">
+                    <label for="step3">Step 3<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p> Add sugar and cardamom, stir well, and cook until the halwa thickens to your desired consistency.</p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step4">
+                    <label for="step4">Step 4<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Add the fried nuts and raisins to the halwa, mix, and serve hot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments">
+        <h2>Comments</h2>
+        <div class="comment-box">
+            <div class="comment">
+                <p><strong>Shravanya Pandiyan</strong>: The recipe was super easy to follow and the biriyani turned out amazing!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Vivek Gokhale</strong>: Loved the flavors! A perfect balance of spices.</p>
+            </div>
+        </div>
+    </section>
+        <!-- Comment Form -->
+    <section>
+        <form class="comment-form">
+            <h3>Cooked this? Comment and rate the recipe</h3>
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <div class="rating">
+                <label>Your rating:</label>
+                <input type="radio" name="rating" value="1"> ⭐
+                <input type="radio" name="rating" value="2"> ⭐⭐
+                <input type="radio" name="rating" value="3"> ⭐⭐⭐
+                <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+                <input type="radio" name="rating" value="5" checked> ⭐⭐⭐⭐⭐
+            </div>
+            <button type="submit" class="btn">Submit Comment</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  
+    const commentForm = document.querySelector('.comment-form');
+    const thankYouMessage = document.createElement('div');  
+    thankYouMessage.classList.add('thank-you-message'); 
+    document.querySelector('.comments').appendChild(thankYouMessage);  
+
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();  
+        const name = commentForm.querySelector('input[type="text"]').value;
+        const comment = commentForm.querySelector('textarea').value;
+        const rating = commentForm.querySelector('input[type="radio"]:checked').value;
+
+     
+        thankYouMessage.textContent = `Thank you, ${name}! Your comment and rating of ${rating} stars have been submitted.`;
+
+        commentForm.reset();
+    });
+});
+    </script>
+</body>
+</html>

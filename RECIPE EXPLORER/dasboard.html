@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe</title>
+    <link rel="stylesheet" href="styless.css">
+    <link rel="icon" type="image/x-icon" href="burger.jpg">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">🍔Food Recipe</div>
+        <div class="moving-text">Cooking is like painting or writing a song. Just as there are only so many notes or colors,
+            there are only so many flavors—it's how you combine them that sets you apart</div>
+        <div class="search-container">
+            <input type="text" placeholder="&#128269 Search recipe" />
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Recipe of the Day -->
+    <section class="recipe-of-day">
+        <div class="recipe-content">
+            <h2>Recipe of the day</h2>
+            <h1>Vegetable Sizzler</h1>
+            <p style="color: antiquewhite;">
+                Sizzlers are a favorite with Indians, as they come with <br> sizzler plates, with tikkis, rice, stir-fried vegetables, <br>
+                French fries, and tasty barbecue sauce.
+            </p>
+            <button class="btn">Get Recipe →</button>
+        </div>
+    </section>
+
+    <!-- Popular Recipes -->
+    <section class="popular-recipes">
+        <h2>Popular Recipes</h2>
+        <div class="recipe-cards">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="butter masala.jpeg" alt="Panner Butter Masala">
+                <h3>Panner Butter Masala</h3> 
+                <span>⭐ 4.5</span>
+                <p>Duration: 1h 12m</p>
+                <p>Paneer Butter  Masala, also <br>known as Butter panner is<br> a rich & creamy curry made...</p>
+                <button type="button" id="PannerButterMasalaBtn">Get Recipe</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="carrot halwa.jpeg" alt="Carrot Halwa">
+                <h3>Carrot Halwa</h3> 
+                <span>⭐ 4.2</span>
+                <p>Duration: 45m</p>
+                <p>Carrot-based sweet is a<br>carrot based sweety<br> dessert pudding made...</p>
+                <button type="button" id="CarrotHalwaBtn">Get Recipe</button>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="tandoori.jpeg" alt="Tandoori Chicken">
+                <h3>Tandoori Chicken</h3>
+                <span>⭐ 4.7</span>
+                <p>Duration: 2h 00m</p>
+                <p>Tandoori chicken is a <br> delicious dish made from <br> marinated in yoghurt...</p>
+                <button type="button" id="TandooriBtn">Get Recipe</button>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="channa.jpeg" alt="Channa Masala">
+                <h3>Channa Masala</h3> 
+                <span>⭐ 4.0</span>
+                <p>Duration: 35m</p>
+                <p>Channa masala is a <br> North Indian curried <br> dish mode with white...</p>
+                <button type="button" id="ChannaMasalaBtn">Get Recipe</button>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="briyani.jpeg" alt="Chicken Biriyani">
+                <h3>Chicken Biriyani</h3> 
+                <span>⭐ 4.6</span>
+                <p>Duration: 1h 12m</p>
+                <p>Mainly Briyani is a mixed rice <br>and mainly popular in a <br>South India.It is made...</p>
+                <button type="button" id="chickenbriyaniBtn">Get Recipe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+    document.getElementById('chickenbriyaniBtn').addEventListener('click', function() {
+        window.location.href = "Dashboard1.html"; // Redirect to Dashboard1 page for Chicken Biriyani
+    });
+    document.getElementById('PannerButterMasalaBtn').addEventListener('click', function() {
+        window.location.href = "Dashboard2.html";
+    });
+    document.getElementById('CarrotHalwaBtn').addEventListener('click', function() {
+        window.location.href = "Dashboard3.html";
+    });
+    document.getElementById('TandooriBtn').addEventListener('click', function() {
+        window.location.href = "Dashboard4.html";
+    });
+    document.getElementById('ChannaMasalaBtn').addEventListener('click', function() {
+        window.location.href = "Dashboard5.html";
+    });
+    </script>
+
+</body>
+</html>

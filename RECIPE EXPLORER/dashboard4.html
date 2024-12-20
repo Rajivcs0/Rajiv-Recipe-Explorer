@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicken Biriyani Recipe</title>
+    <link rel="stylesheet" href="styless1.css">
+    <link rel="icon" type="image/x-icon" href="burger.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="cursors"></div>
+    <form id="dashboard4" action="connection.php" method="post"> 
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">🍔 Food Recipe</div>
+        <div class="blink-text">Tandoori Chicken – smoky, spicy, and marinated in a love affair of fire and flavor
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search recipe" />
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="4.Tandoori.jpg" alt="Tandoori Chicken">
+        <div class="recipe-info">
+            <h1>Tandoori Chicken</h1>
+            <div class="recipe-meta">
+                <span>⏱ Duration: 1h 12m</span>
+                <span>👨‍🍳 Chef: Bharath</span>
+                <span>🥘 Non-Veg</span>
+                <span>⭐ 4.7</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Details -->
+    <section class="recipe-details">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            
+            <div class="p1">
+                <ul>
+                <li>Chicken</li>
+                <li>yoghurt</li>
+                <li>Turmeric Powder</li>
+                <li>Peanut oil for frying </li>
+                <li>Chili powder </li>
+                <li>Garlic paste </li>
+                <li>Ginger paste </li>
+                <li>Garam Masala</li>
+                <li>Lemon juice</li>
+                <li>mustard oil</li>
+                <li>Tandoori Masala </li>
+                <li>Paprika</li>
+                <li>Kasuri methi</li>
+                <li>Coriander Powder</li>
+                <li>Salt</li>
+            </ul>
+            </div>
+            <div class="p1">
+                <ul>
+                    <li> -1 KG</li>
+                    <li> - 1 KG</li>
+                    <li> -3</li>
+                    <li> - 200ml</li>
+                    <li>- 2 tsp</li>
+                    <li>- 1 tbsp</li>
+                    <li>- 1 tbsp</li>
+                    <li>- 1/2 tsp</li>
+                    <li>-  1</li>
+                    <li> - 3</li>
+                    <li>- 2</li>
+                    <li> - 4</li>
+                    <li>- 6 pods</li>
+                    <li>- 1 bunch</li>
+                    <li> - To taste</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="directions">
+            <h2>Directions</h2>
+            <div class="steps">
+                <div class="step">
+                    <input type="checkbox" id="step1">
+                    <label for="step1">Step 1<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>
+                        Mix yogurt, tandoori masala, red chili powder, cumin powder, coriander powder, turmeric, garam masala, lemon juice, ginger-garlic paste, and salt in a bowl. Coat the chicken pieces with this marinade, cover, and refrigerate for 4-6 hours or overnight for best results.
+                    </p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step2">
+                    <label for="step2">Step 2<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Preheat your oven to 400°F (200°C) or heat your grill.</p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step3">
+                    <label for="step3">Step 3<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Place the marinated chicken on a baking tray or grill rack. Bake in the oven for 25-30 minutes or grill for 15-20 minutes, turning occasionally until cooked through and slightly charred.</p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step4">
+                    <label for="step4">Step 4<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Serve hot with lemon wedges, onions, and cilantro.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments">
+        <h2>Comments</h2>
+        <div class="comment-box">
+            <div class="comment">
+                <p><strong>Shravanya Pandiyan</strong>: The recipe was super easy to follow and the biriyani turned out amazing!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Vivek Gokhale</strong>: Loved the flavors! A perfect balance of spices.</p>
+            </div>
+        </div>
+    </section>
+        <!-- Comment Form -->
+    <section>
+        <form class="comment-form">
+            <h3>Cooked this? Comment and rate the recipe</h3>
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <div class="rating">
+                <label>Your rating:</label>
+                <input type="radio" name="rating" value="1"> ⭐
+                <input type="radio" name="rating" value="2"> ⭐⭐
+                <input type="radio" name="rating" value="3"> ⭐⭐⭐
+                <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+                <input type="radio" name="rating" value="5" checked> ⭐⭐⭐⭐⭐
+            </div>
+            <button type="submit" class="btn">Submit Comment</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const commentForm = document.querySelector('.comment-form');
+    const thankYouMessage = document.createElement('div'); 
+    thankYouMessage.classList.add('thank-you-message'); 
+    document.querySelector('.comments').appendChild(thankYouMessage);  
+
+    // Listen for form submission
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();  // Prevent page reload
+        
+        const name = commentForm.querySelector('input[type="text"]').value;
+        const comment = commentForm.querySelector('textarea').value;
+        const rating = commentForm.querySelector('input[type="radio"]:checked').value;
+
+        thankYouMessage.textContent = `Thank you, ${name}! Your comment and rating of ${rating} stars have been submitted.`;
+
+        commentForm.reset();
+    });
+});
+    </script>
+</body>
+</html>

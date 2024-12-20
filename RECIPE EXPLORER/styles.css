@@ -1,0 +1,158 @@
+/* General reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.input-group{
+  position: relative;
+  margin: 20px 0;
+}
+
+input {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f4b400;
+  box-shadow: 0 0 5px rgba(244, 180, 0, 0.3);
+}
+
+.corner-label{
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 10px;
+}
+
+button#signinBtn {
+  background-color: #dd7515; /* Button color */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#signinBtn:hover {
+  background-color: #f57c00; /* Darker shade on hover */
+}
+
+button#signinBtn:active {
+  background-color: #e64a19; /* Even darker shade on click */
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p a {
+  color: #dd7515;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+button#signupBtn {
+  background-color: #dd7515; /* Button color */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#signupBtn:hover {
+  background-color: #f57c00; /* Darker shade on hover */
+}
+
+button#signupBtn:active {
+  background-color: #e64a19; /* Even darker shade on click */
+}
+
+p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p a {
+  color: #dd7515;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+.animated-btn {
+  animation: bounce 0.5s ease-in-out infinite;
+}
+
+

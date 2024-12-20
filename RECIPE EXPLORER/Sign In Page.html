@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="burger.jpg">
+
+</head>
+<body>
+<div class="cursors"></div>
+<div class="container">
+    <div class="login-box">
+        <h1 class="title" style="color: #dd7515">
+            <span class="logo">🍔</span><br>
+            Food Recipe
+        </h1>
+        <h2 class="subtitle" style="color: #dd7515">Sign in</h2>
+    <form id="logininForm">
+        <label for="signinEmail">Email</label>
+        <input type="email" id="signinEmail" placeholder="example@mail.com" required><br>
+
+        <label for="signinPassword">Password</label>
+        <input type="password" id="signinPassword" placeholder="password" required><br>
+
+        <button type="button" id="signinBtn" class="animated-btn">Sign In</button>
+    </form>
+
+    <p>Don't have an account? <a href="Sign Up Page.php" id="signupLink">Sign Up</a></p>
+</div>
+
+<script>
+    document.getElementById('signinBtn').addEventListener('click', function() {
+    var email = document.getElementById('signinEmail').value;
+    var password = document.getElementById('signinPassword').value;
+
+    if (email === "" || password === "") {
+        alert("Please fill both email and password.");
+    } else {
+        window.location.href = "Dasboard.html"; 
+    }
+});
+</script>
+</body>
+</html>

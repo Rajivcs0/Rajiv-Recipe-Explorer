@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Butter Masala</title>
+    <link rel="stylesheet" href="styless1.css">
+    <link rel="icon" type="image/x-icon" href="burger.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="cursors"></div>
+    <form id="dashboard2" action="connection.php" method="post"> 
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo">🍔 Food Recipe</div>
+        <div class="blink-text">Paneer Butter Masala – where velvety butter and soft paneer unite to create magic on your plate
+        </div>
+        <div class="search-container">
+        <div class="search-container">
+            <input type="text" placeholder="Search recipe" />
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="1.Panner Masala.jpg" alt="Paneer Butter Masala">
+        <div class="recipe-info">
+            <h1>Panner Butter Masala</h1>
+            <div class="recipe-meta">
+                <span>⏱ Duration: 1h 12m</span>
+                <span>👨‍🍳 Chef: Bharath</span>
+                <span>🥘 Non-Veg</span>
+                <span>⭐ 4.7</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Details -->
+    <section class="recipe-details">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            
+            <div class="p1">
+                <ul>
+                <li>Tomatoes</li>
+                <li>Onions</li>
+                <li>Garlic </li>
+                <li>Ginger </li>
+                <li>Green Chillies</li>
+                <li>Cumin seeds</li>
+                <li>Coriander powder </li>
+                <li>turmeric powder</li>
+                <li>Garam  Masala</li>
+                <li>Red chilli Powder </li>
+                <li>Panner</li>
+                <li>Cloves </li>
+                <li>Cardamom </li>
+                <li>Butter</li>
+                <li>Salt</li>
+            </ul>
+            </div>
+            <div class="p1">
+                <ul>
+                    <li> -1 KG</li>
+                    <li> - 1 KG</li>
+                    <li> -3</li>
+                    <li> - 200ml</li>
+                    <li>- 2 tsp</li>
+                    <li>- 1 tbsp</li>
+                    <li>- 1 tbsp</li>
+                    <li>- 1/2 tsp</li>
+                    <li>-  1</li>
+                    <li> - 3</li>
+                    <li>- 2</li>
+                    <li> - 4</li>
+                    <li>- 6 pods</li>
+                    <li>- 1 bunch</li>
+                    <li> - To taste</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+        <div class="directions">
+            <h2>Directions</h2>
+            <div class="steps">
+                <div class="step">
+                    <input type="checkbox" id="step1">
+                    <label for="step1">Step 1<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>
+                        Heat butter in a pan. Add cumin seeds and sauté, then add chopped onions and cook until golden. Add ginger-garlic paste and sauté until fragrant.
+                    </p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step2">
+                    <label for="step2">Step 2<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Add chopped tomatoes, red chili powder, coriander powder, and salt. Cook until the tomatoes break down and oil separates from the sauce.</p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step3">
+                    <label for="step3">Step 3<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Optionally, blend the cooked tomato-onion mixture for a smoother texture, then return it to the pan.</p>
+                </div>
+                <div class="step">
+                    <input type="checkbox" id="step4">
+                    <label for="step4">Step 4<span><i class="fa-solid fa-caret-down"></i></span></label>
+                    <p>Add cubed paneer, garam masala, kasuri methi, and a little sugar to balance the flavors. Stir in cream and cook for 5-10 minutes until the sauce thickens. Serve with naan or rice.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments Section -->
+    <section class="comments">
+        <h2>Comments</h2>
+        <div class="comment-box">
+            <div class="comment">
+                <p><strong>Shravanya Pandiyan</strong>: The recipe was super easy to follow and the biriyani turned out amazing!</p>
+            </div>
+            <div class="comment">
+                <p><strong>Vivek Gokhale</strong>: Loved the flavors! A perfect balance of spices.</p>
+            </div>
+        </div>
+    </section>
+        <!-- Comment Form -->
+    <section>
+        <form class="comment-form">
+            <h3>Cooked this? Comment and rate the recipe</h3>
+            <input type="text" placeholder="Your name" required />
+            <textarea placeholder="Your comment" required></textarea>
+            <div class="rating">
+                <label>Your rating:</label>
+                <input type="radio" name="rating" value="1"> ⭐
+                <input type="radio" name="rating" value="2"> ⭐⭐
+                <input type="radio" name="rating" value="3"> ⭐⭐⭐
+                <input type="radio" name="rating" value="4"> ⭐⭐⭐⭐
+                <input type="radio" name="rating" value="5" checked> ⭐⭐⭐⭐⭐
+            </div>
+            <button type="submit" class="btn">Submit Comment</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+   
+    const commentForm = document.querySelector('.comment-form');
+    const thankYouMessage = document.createElement('div');  
+    thankYouMessage.classList.add('thank-you-message'); 
+    document.querySelector('.comments').appendChild(thankYouMessage);  
+
+    commentForm.addEventListener('submit', function(event) {
+        event.preventDefault();  
+        
+        const name = commentForm.querySelector('input[type="text"]').value;
+        const comment = commentForm.querySelector('textarea').value;
+        const rating = commentForm.querySelector('input[type="radio"]:checked').value;
+
+        thankYouMessage.textContent = `Thank you, ${name}! Your comment and rating of ${rating} stars have been submitted.`;
+
+        commentForm.reset();
+    });
+});
+    </script>
+</body>
+</html>

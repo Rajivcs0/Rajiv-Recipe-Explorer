@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #ff8c00;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blink-text{
+    font-size: 1rem;
+    font-weight: bold;
+    color:#ff8c00;
+    white-space: nowrap;
+    animation: blink 8s linear infinite ;
+    
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.recipe-info {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+}
+
+.recipe-meta span {
+    margin-right: 15px;
+}
+
+/* Recipe Details */
+.recipe-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.ingredients, .directions {
+    width: 45%;
+}
+
+.ingredients ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ingredients li {
+    margin-bottom: 10px;
+}
+
+/* Directions */
+.steps .step {
+    margin-bottom: 10px;
+}
+
+.steps input {
+    display: none;
+}
+
+.steps label {
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.steps p {
+    display: none;
+}
+
+.steps input:checked + label + p {
+    display: block;
+}
+
+.comments{
+    width:45%;
+}
+
+/* Comments */
+.comments {
+    padding: 20px;
+    float: right;
+}
+
+.comment-box {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+
+.comment-form input, .comment-form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    width: 45%;
+}
+
+.rating {
+    margin: 10px 0;
+    width: 45%;
+}
+li p{
+    display: inline;
+    padding-left: 40%;
+}
+.p1{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+@keyframes blink{
+    50%{
+        opacity: 0.3;
+    }
+    80%{
+        opacity: 0.2;
+    }
+}
