@@ -54,10 +54,11 @@ Use XAMPP server to host the application.
 Place the project folder in the htdocs directory (or equivalent).
 
 Images
-![Screenshot (273)](https://github.com/user-attachments/assets/76cf743b-ebf2-43fb-98be-d478a01d09a7)
-![Screenshot (270)](https://github.com/user-attachments/assets/a4335776-b0da-4942-9bd0-2c7bfd45ecd4)
-![Screenshot (271)](https://github.com/user-attachments/assets/dd5b517f-7449-4fae-9bda-d4622fa215ef)
-![Screenshot (272)](https://github.com/user-attachments/assets/5838e2c6-3071-4b3b-af14-e82850e24cbb)
+![Screenshot (273)](https://github.com/user-attachments/assets/c93104d5-fcef-4f52-b26e-acb7bcbd4ea3)
+![Screenshot (272)](https://github.com/user-attachments/assets/1d4925e0-bf8d-4b08-a9ff-f5808c0f251b)
+![Screenshot (270)](https://github.com/user-attachments/assets/30d10a27-ad32-40dc-802b-79955269c60e)
+![Screenshot (271)](https://github.com/user-attachments/assets/636c5744-e61e-4efe-91ab-1be4264c5eb4)
+
 
 Access the application:
 Open your browser and navigate to http://localhost/recipe-explorer.
