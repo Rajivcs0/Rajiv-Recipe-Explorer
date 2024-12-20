@@ -9,6 +9,7 @@ Add Recipes: Users can add their own recipes with details such as ingredients, s
 Favorites: Mark recipes as favorites for quick access.
 Comments and rating systems in the design.
 Responsive Design: Optimized for desktop, tablet, and mobile devices.
+Javascript Codes are coded itself the HTML files
 
 
 Frontend:
@@ -36,7 +37,10 @@ Dashboard5(Tandoori Chicken)
 
 Installation
 Clone the repository:
-git clone https://github.com/Rajiv/recipe-explorer.git
+gh repo clone Rajivcs0/Rajiv-Recipe-Explorer
+
+Web page:
+https://github.com/Rajivcs0/Rajiv-Recipe-Explorer.git
 
 <?php
 $db_host = 'localhost';
@@ -50,8 +54,10 @@ Use XAMPP server to host the application.
 Place the project folder in the htdocs directory (or equivalent).
 
 Images
+![Screenshot (273)](https://github.com/user-attachments/assets/76cf743b-ebf2-43fb-98be-d478a01d09a7)
 ![Screenshot (270)](https://github.com/user-attachments/assets/a4335776-b0da-4942-9bd0-2c7bfd45ecd4)
-
+![Screenshot (271)](https://github.com/user-attachments/assets/dd5b517f-7449-4fae-9bda-d4622fa215ef)
+![Screenshot (272)](https://github.com/user-attachments/assets/5838e2c6-3071-4b3b-af14-e82850e24cbb)
 
 Access the application:
 Open your browser and navigate to http://localhost/recipe-explorer.
