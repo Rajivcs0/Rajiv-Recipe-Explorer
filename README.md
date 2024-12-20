@@ -38,8 +38,6 @@ Installation
 Clone the repository:
 git clone https://github.com/Rajiv/recipe-explorer.git
 
-
-Update the database connection details in the config.php file:
 <?php
 $db_host = 'localhost';
 $db_user = 'root';
